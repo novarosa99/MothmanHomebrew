@@ -1,0 +1,243 @@
+{
+	"siteVersion": "1.179.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "MothmanHimself",
+				"abbreviation": "MOTH",
+				"full": "Mothman Himself",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1681878689,
+		"dateLastModified": 1681878689
+	},
+	"monster": [
+		{
+			"name": "Mothman",
+			"shortName": true,
+			"isNpc": true,
+			"source": "MothmanHimself",
+			"basicRules": true,
+			"level": 4,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": {
+					"choose": []
+				},
+				"note": "Cryptid"
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"condition": "(14 with Mage Armor)"
+				}
+			],
+			"hp": {
+				"special": "29"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 9,
+			"dex": 12,
+			"con": 12,
+			"int": 16,
+			"wis": 16,
+			"cha": 10,
+			"save": {
+				"wis": "+5",
+				"cha": "+0",
+				"int": "+5",
+				"str": "-1",
+				"dex": "+1",
+				"con": "+1"
+			},
+			"skill": {
+				"perception": "+5",
+				"arcana": "+5",
+				"history": "+5",
+				"insight": "+5"
+			},
+			"senses": [
+				"darkvision 300 ft."
+			],
+			"passive": 15,
+			"resist": [
+				"necrotic",
+				"radiant"
+			],
+			"languages": [
+				"Common",
+				"Celestial",
+				"Abyssal",
+				"Deep Speech",
+				"Primordial"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Modifier: (+3) Spell Attack: (+5) Save DC: (13)",
+						"Spell Slots",
+						"1st: <input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\">",
+						"2nd: <input type=\"checkbox\"><input type=\"checkbox\"><input type=\"checkbox\">"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell message}",
+								"{@spell mind sliver|TCE}",
+								"{@spell sacred flame}",
+								"{@spell spare the dying}",
+								"{@spell thaumaturgy}",
+								"{@spell true strike}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell chromatic orb}",
+								"{@spell cure wounds}",
+								"{@spell faerie fire}",
+								"{@spell guiding bolt}",
+								"{@spell healing word}",
+								"{@spell identify}",
+								"{@spell mage armor}",
+								"{@spell protection from evil and good}",
+								"{@spell sleep}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell invisibility}",
+								"{@spell lesser restoration}",
+								"{@spell misty step}",
+								"{@spell Tasha's mind whip|TCE}"
+							],
+							"slots": 3
+						}
+					},
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"As Ritual"
+					],
+					"will": [
+						"{@spell comprehend languages}",
+						"{@spell detect magic}"
+					],
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Arcane Recovery",
+					"entries": [
+						"<input type=\"checkbox\">/long rest. Once per day when you finish a short rest, you can choose expended spell slots to recover - up to a combined level of 2, and none of the slots can be 6th level or higher. "
+					]
+				},
+				{
+					"name": "Portent",
+					"entries": [
+						"<input type=\"checkbox\"> <input type=\"checkbox\">/long rest. When you finish a long rest, roll two d20s and record the numbers rolled. You can replace any attack roll, saving throw, or ability check made by you or a creature that you can see with one of these foretelling rolls. You must choose to do so before the roll, and you can replace a roll in this way only once per turn. Each roll can only be used once."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "+1 Quarterstaff",
+					"entries": [
+						"{@atk mw} {@hit +1} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Eyes of Night",
+					"entries": [
+						"<input type=\"checkbox\">/long rest. As an action, you can share your 300 ft. darkvision with up to 2 willing creatures you can see within 10 ft. of you, lasting for 1 hour. Once you share it, you can’t do so again until you finish a long rest, unless you expend a spell slot of any level to share it again."
+					]
+				},
+				{
+					"name": "Healing Hands",
+					"entries": [
+						"<input type=\"checkbox\">/long rest. Once per long rest as an action, touch a creature and restore 4 hit points."
+					]
+				},
+				{
+					"name": "Vigilant Blessing",
+					"entries": [
+						"You give one creature you touch (including possibly yourself) advantage on the next initiative roll the creature makes. This benefit ends immediately after the roll or if you use this feature again."
+					]
+				},
+				{
+					"name": "Twilight Sanctuary",
+					"entries": [
+						"<input type=\"checkbox\"> <input type=\"checkbox\">/long rest",
+						"As an action, you present your holy symbol, and a sphere of twilight emanates from you. The sphere is centered on you, has a 30-foot radius, and is filled with dim light. The sphere moves with you, and it lasts for 1 minute or until you are {@condition incapacitated} or die. Whenever a creature (including you) ends its turn in the sphere, you can grant that creature one of these benefits:",
+						"You grant it temporary hit points equal to {@dice 1d6} plus your cleric level.",
+						"You end one effect on it causing it to be {@condition charmed} or {@condition frightened}."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/originals/7a/71/b4/7a71b461fe0d2eefa5bb8062a5b98c67.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.pinimg.com/originals/7a/71/b4/7a71b461fe0d2eefa5bb8062a5b98c67.png",
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"CE",
+				"DS",
+				"P"
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"F",
+				"I",
+				"L",
+				"R",
+				"T",
+				"Y"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	]
+}

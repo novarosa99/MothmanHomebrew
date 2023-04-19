@@ -1,0 +1,647 @@
+{
+	"siteVersion": "1.178.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "MothmanAllies",
+				"abbreviation": "MMAL",
+				"full": "Mothman Allies",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1681497415,
+		"dateLastModified": 1681497415
+	},
+	"monster": [
+		{
+			"name": "Cadwyn Urrion",
+			"isNpc": true,
+			"source": "MothmanAllies",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"sidekickType": "warrior",
+				"sidekickHidden": true
+			},
+			"ac": [
+				{
+					"ac": 16,
+					"condition": "(20 when Shield of the Moonstone is equipped)"
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 24",
+				"average": 78
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 14,
+			"int": 10,
+			"wis": 12,
+			"cha": 10,
+			"save": {
+				"con": "+6"
+			},
+			"skill": {
+				"athletics": "+8",
+				"perception": "+5",
+				"survival": "+5"
+			},
+			"passive": 15,
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"trait": [
+				{
+					"name": "Battle Readiness",
+					"entries": [
+						"The warrior has advantage on initiative rolls."
+					]
+				},
+				{
+					"name": "Improved Critical",
+					"entries": [
+						"The warrior's attack rolls score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+					]
+				},
+				{
+					"name": "Indomitable (1/Day)",
+					"entries": [
+						"The warriorcan reroll a saving throw that it fails, but it must use the new result."
+					]
+				},
+				{
+					"name": "Martial Role",
+					"entries": [
+						"The warrior has one of the following traits of your choice:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"name": "Attacker",
+									"type": "item",
+									"entries": [
+										"The warrior gains a +2 bonus to attack rolls."
+									]
+								},
+								{
+									"name": "Defender",
+									"type": "item",
+									"entries": [
+										"The warrior gains the Protection reaction below."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Second Wind (Recharges after a Short or Long Rest)",
+					"entries": [
+						"The warrior can use a bonus action on its turn to regain hit points equal to {@dice 1d10} + its level."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Extra Attack",
+					"entries": [
+						"The warrior can attack twice, instead of once, whenever it takes the attack action on its turn."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage, or 9 ({@damage 1d10 + 4}) slashing damage if used with two hands."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 150/600 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Protection (Defender Only)",
+					"entries": [
+						"When a creature the warrior can see attacks a target other than the warrior that is within 5 feet of the warrior, the warrior can use their reaction to impose disadvantage on the attack roll. The warrior must be wielding a shield."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"A descendant of the first king, Iorweth Urrion, Cadwyn Urrion is the forgotten true king of the now fallen kingdom of Ilverynn.  Over a century ago, the last king, Vaddon Urrion, was betrayed and poisoned along with his knights. Upon their deaths, the kingdom fell into chaos and the island was overrun with aberrations and undead brought from the Shadowfell by cultists of Shar. Cadwyn has spent his life protecting the few people that remain on the island in the village of Coldbreak. Until the Shield of the Moonstone, King Iorweth's shield blessed with powers by the goddess Selune is returned to him, he will be unable to reclaim the throne and cleanse the island of the darkness that plagues it. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4464d11b-6902-4fad-b0ce-36255009a2a1/d6u7g3e-2479b9b1-469f-4b9f-93a8-e39b3ff48738.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzQ0NjRkMTFiLTY5MDItNGZhZC1iMGNlLTM2MjU1MDA5YTJhMVwvZDZ1N2czZS0yNDc5YjliMS00NjlmLTRiOWYtOTNhOC1lMzliM2ZmNDg3MzguanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.5KVthyi2W85fp-HtrsClMbcS1WjGHuFKp_KEHj3KLOM"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.pinimg.com/originals/fb/8f/17/fb8f170054c17a1135fadb02e361334c.png",
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			]
+		},
+		{
+			"name": "Fell Beast",
+			"source": "MothmanAllies",
+			"size": [
+				"H"
+			],
+			"type": "aberration",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d10 + 39",
+				"average": 110
+			},
+			"speed": {
+				"walk": 20,
+				"fly": {
+					"number": 100,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 19,
+			"dex": 10,
+			"con": 16,
+			"int": 5,
+			"wis": 12,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft.",
+				"blindsight 10 ft."
+			],
+			"passive": 11,
+			"immune": [
+				"cold",
+				"poison"
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"conditionImmune": [
+				"charmed",
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Abyssal"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Bad Stench",
+					"entries": [
+						"The body of a fell beast gives off a stench. Any creature that ends its turn within 10 feet of the fell beast must succeed on a {@dc 12} Constitution saving throw or become {@condition poisoned} for 1 minute. A {@condition poisoned} creature may repeat the saving throw at the end of each of its turns, ending the effect on itself on a success, or taking 6 ({@damage 1d12}) poison damage on a failure."
+					]
+				},
+				{
+					"name": "Aerial Hunters",
+					"entries": [
+						"A fell beast doesn't fight on the ground unless it can't reach its prey by any other means, or if it has been fooled into a position from which aerial combat isn't an option. If forced into a confrontation on the ground, they will snap and swing tail or wings at you."
+					]
+				},
+				{
+					"name": "Tamed Fell Beasts",
+					"entries": [
+						"A fell beast can be tamed for use as a mount, but doing so presents a difficult and deadly challenge. Raising one as a hatchling offers the best results. However, a fell beast's violent temperament has cost the life of many a would-be master. You must also be Chaotic neutral to any evil to tame a fell beast."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The fell beasts makes two attacks: one with its bite and one with its claws. While flying, it can use its claws in place of one other attack."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d6 + 4}) piercing damage, plus 5 ({@damage 2d4}) poison damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 1d10 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 20 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Wings",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 20 ft., one target. {@h}13 ({@damage 2d8 + 4}) force damage. If the wing attack is made while flying, the target must succeed on a {@dc 13} strength saving throw or be pushed 10 feet away from the creature."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"The fell beasts were described as large, winged creatures without feathers. Its pinions were in between horned fingers; and its body gave off a stench and fell beasts were powerful creatures and were deadly offensive predators, especially with the black riders on them. They could choose either to bite their prey (less attacking radius but increased damage) or swoop down on them (larger attacking radius), scattering enemies apart or outright crushing them. If a fell beast snatched a soldier, it could easily fly high into the air and drop its helpless victim to his death far below. Fell beasts were feared for their ferocity and speed."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/originals/f0/6a/57/f06a5786a0e0616ab571945eec5609de.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.pinimg.com/originals/f0/6a/57/f06a5786a0e0616ab571945eec5609de.png",
+			"traitTags": [
+				"Incorporeal Movement",
+				"Turn Immunity"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"O",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Sarth",
+			"shortName": "Sarth",
+			"isNpc": true,
+			"source": "MothmanAllies",
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": {
+					"choose": []
+				},
+				"note": "Dragonborn"
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item chain mail|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d10 + 6",
+				"average": 22
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 10,
+			"cha": 15,
+			"save": {
+				"wis": "+2",
+				"cha": "+4"
+			},
+			"skill": {
+				"history": "+2",
+				"insight": "+2",
+				"religion": "+2",
+				"sleight of hand": "+2"
+			},
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"fire"
+			],
+			"languages": [
+				"Common",
+				"Celestial",
+				"Draconic",
+				"Sylvan"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Spell Slots",
+						"1st: <input type=\"checkbox\"><input type=\"checkbox\">"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell compelled duel}",
+								"{@spell cure wounds}",
+								"{@spell searing smite}"
+							],
+							"slots": 2
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Divine Smite",
+					"entries": [
+						"When you hit with a melee weapon attack, you can expend one spell slot to deal {@dice 2d8} extra radiant damage to the target plus {@dice 1d8} for each spell level higher than 1st (max {@dice 5d8}) and plus {@dice 1d8} against undead or fiends."
+					]
+				},
+				{
+					"name": "Blind Fighting",
+					"entries": [
+						"You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn’t behind total cover, even if you’re {@condition blinded} or in darkness. Moreover, you can see an {@condition invisible} creature within that range, unless the creature successfully hides from you."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit +5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Breath Weapon (Gold)",
+					"entries": [
+						"<input type=\"checkbox\">/short rest. As an action once per short rest, exhale in a 15 ft. cone (DEX {@dc 12}, half damage on success) for {@damage 2d6} Fire Damage"
+					]
+				},
+				{
+					"name": "Divine Sense",
+					"entries": [
+						"<input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">/long rest. As an action, you can detect good and evil. Until the end of your next turn, you can sense anything affected by the hallow spell or know the location of any celestial, fiend, undead within 60 ft. that is not behind total cover. You can use this feature 3 times per long rest."
+					]
+				},
+				{
+					"name": "Lay on Hands Pool",
+					"entries": [
+						"You have a pool of healing power that can restore 10 HP per long rest. As an action, you can touch a creature to restore any number of HP remaining in the pool, or 5 HP to either cure a disease or neutralize a poison affecting the creature.",
+						"<input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\"> <input type=\"checkbox\">/long rest."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/originals/34/7f/a2/347fa2b58e55b7938f48ca85c23ea8d1.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.pinimg.com/originals/34/7f/a2/347fa2b58e55b7938f48ca85c23ea8d1.png",
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"languageTags": [
+				"C",
+				"CE",
+				"DR",
+				"S"
+			],
+			"damageTags": [
+				"S"
+			],
+			"damageTagsSpell": [
+				"F"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Weeping Willa",
+			"isNpc": true,
+			"source": "MothmanAllies",
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"formula": "10d8 - 10",
+				"average": 35
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 40,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 7,
+			"dex": 13,
+			"con": 8,
+			"int": 10,
+			"wis": 12,
+			"cha": 17,
+			"skill": {
+				"persuasion": "+5",
+				"performance": "+5",
+				"deception": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"acid",
+				"fire",
+				"lightning",
+				"thunder",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"cold",
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"languages": [
+				"any languages it knew in life"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Ethereal Sight",
+					"entries": [
+						"The ghost can see 60 feet into the Ethereal Plane when it is on the Material Plane, and vice versa."
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The ghost can move through other creatures and objects as if they were {@quickref difficult terrain||3}. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Chill Touch",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) cold damage."
+					]
+				},
+				{
+					"name": "Unending Wailing",
+					"entries": [
+						"One creature within 30 feet of the ghost that can hear it must succeed on a {@dc 12} Wisdom saving throw or be {@condition paralyzed} until the end of the ghost's next turn. If the save fails by 5 or more, the target also ages {@dice 1d4 × 10} years. A {@condition paralyzed} target can repeat the saving throw at the end of each of its turns, ending the {@condition paralyzed} condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this ghost's Unending Wailing for the next 24 hours. The aging effect can be reversed with a  {@spell greater restoration} spell, but only within 24 hours of it occurring."
+					]
+				},
+				{
+					"name": "Possession {@recharge}",
+					"entries": [
+						"One humanoid that the ghost can see within 5 feet of it must succeed on a {@dc 12} Charisma saving throw or be possessed by the ghost; the ghost then disappears, and the target is {@condition incapacitated} and loses control of its body. The ghost now controls the body but doesn't deprive the target of awareness. The ghost can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being {@condition charmed} and {@condition frightened}. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.",
+						"The possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like the {@spell dispel evil and good} spell. When the possession ends, the ghost reappears in an unoccupied space within 5 feet of the body. The target is immune to this ghost's Possession for 24 hours after succeeding on the saving throw or after the possession ends."
+					]
+				},
+				{
+					"name": "Etherealness",
+					"entries": [
+						"The ghost enters the Ethereal Plane from the Material Plane, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/originals/4c/23/50/4c235019ccaa96ecc35abf12cb1ad1ff.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.pinimg.com/originals/4c/23/50/4c235019ccaa96ecc35abf12cb1ad1ff.png",
+			"traitTags": [
+				"Incorporeal Movement"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"C",
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"incapacitated",
+				"paralyzed"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	]
+}
